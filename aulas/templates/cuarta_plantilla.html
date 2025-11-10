@@ -1,0 +1,24 @@
+     <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Mi cuarta plantilla</title>
+      </head>
+      <body>
+        <h1>¡Hola <i>{{mi_empleado.nombre}} </i>{{mi_empleado.apellido}}, esta es mi cuarta plantilla en archivo!</h1>
+        <p>Estoy aprendiendo Django.</p>
+        <h1>{{fecha_actual|date:'y-m-d'}}</h1>
+      </body>
+      <p>
+        el empleado trabaja los dias
+
+      </p>
+         {% if laborales %}
+       <ul>
+        {% for dia in laborales %}
+          <li>{{ dia }}</li>
+        {% endfor %}
+       </ul>
+      {% else %}
+        <p>El empleado no trabaja ningun dia</p>
+       {% endif %}
+    </html>

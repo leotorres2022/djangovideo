@@ -1,5 +1,5 @@
 django
-psycopg
+psycopg2-binary
 django-rest-auth
 djangorestframework
 djangorestframework-jwt
